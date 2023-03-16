@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{tab}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<main>
+  <ion-list [inset]="true" *ngIf="this.tab === 'Clients'">
+    <ion-item *ngFor="let item of content">
+      <ion-label>
+        <h2>{{item['nombre']}} {{item['apellidos']}}</h2>
+        <p>
+          <ion-icon name="mail"></ion-icon>
+          {{item['email']}}
+        </p>
+        <p>
+          <ion-icon name="call"></ion-icon>
+          {{item['telefono']}}
+        </p>
+      </ion-label>
+      <ion-buttons>
+        <ion-button (click)="goToDetail(item['id'])">
+          Edit
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+</main>
+</ion-content>

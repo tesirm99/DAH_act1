@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>Back</ion-back-button>
+      <ion-button (click)="goHome()">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Cliente {{item.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<main>
+  <form class="clientForm">
+    <ion-list>
+      <ion-item fill="solid">
+        <ion-label position="stacked" for="nombre">Nombre</ion-label>
+        <ion-input type="text" id="nombre" name="nombre" [(ngModel)]="item.nombre"/>
+      </ion-item>
+      <ion-item fill="solid">
+        <ion-label position="stacked" for="apellidos">Apellidos</ion-label>
+        <ion-input type="text" id="apellidos" name="apellidos" [(ngModel)]="item.apellidos"/>
+      </ion-item>
+      <ion-item fill="solid">
+        <ion-label position="stacked" for="email">Email</ion-label>
+        <ion-input type="text" id="email" name="email" [(ngModel)]="item.email"/>
+      </ion-item>
+      <ion-item fill="solid">
+        <ion-label position="stacked" for="telefono">Teléfono</ion-label>
+        <ion-input type="text" id="telefono" name="telefono" [(ngModel)]="item.telefono"/>
+      </ion-item>
+    </ion-list>
+  </form>
+</main>
+</ion-content>

@@ -1,0 +1,12 @@
+[
+  { "id_cliente": 1, "id_producto": 2, "fecha_reserva": "2023-03-11" },
+  { "id_cliente": 2, "id_producto": 8, "fecha_reserva": "2023-03-12" },
+  { "id_cliente": 3, "id_producto": 1, "fecha_reserva": "2023-03-13" },
+  { "id_cliente": 4, "id_producto": 7, "fecha_reserva": "2023-03-14" },
+  { "id_cliente": 5, "id_producto": 10, "fecha_reserva": "2023-03-15" },
+  { "id_cliente": 6, "id_producto": 4, "fecha_reserva": "2023-03-16" },
+  { "id_cliente": 7, "id_producto": 5, "fecha_reserva": "2023-03-17" },
+  { "id_cliente": 8, "id_producto": 9, "fecha_reserva": "2023-03-18" },
+  { "id_cliente": 9, "id_producto": 6, "fecha_reserva": "2023-03-19" },
+  { "id_cliente": 10, "id_producto": 3, "fecha_reserva": "2023-03-20" }
+]

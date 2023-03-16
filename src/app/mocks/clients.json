@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "apellidos": "García Pérez",
+      "edad": 25,
+      "email": "ana.garcia@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 2,
+      "nombre": "Juan",
+      "apellidos": "Martínez González",
+      "edad": 32,
+      "email": "juan.martinez@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 3,
+      "nombre": "María",
+      "apellidos": "Fernández López",
+      "edad": 41,
+      "email": "maria.fernandez@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 4,
+      "nombre": "Carlos",
+      "apellidos": "Gutiérrez Sánchez",
+      "edad": 28,
+      "email": "carlos.gutierrez@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 5,
+      "nombre": "Lucía",
+      "apellidos": "Ramírez Hernández",
+      "edad": 39,
+      "email": "lucia.ramirez@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 6,
+      "nombre": "Pedro",
+      "apellidos": "Díaz González",
+      "edad": 45,
+      "email": "pedro.diaz@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 7,
+      "nombre": "Laura",
+      "apellidos": "Sánchez Rodríguez",
+      "edad": 27,
+      "email": "laura.sanchez@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 8,
+      "nombre": "Sofía",
+      "apellidos": "Pérez López",
+      "edad": 36,
+      "email": "sofia.perez@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 9,
+      "nombre": "Luis",
+      "apellidos": "García García",
+      "edad": 30,
+      "email": "luis.garcia@example.com",
+      "telefono": "+1-555-555-5555"
+    },
+    {
+      "id": 10,
+      "nombre": "Marcela",
+      "apellidos": "González Fernández",
+      "edad": 29,
+      "email": "marcela.gonzalez@example.com",
+      "telefono": "+1-555-555-5555"
+    }
+  ]
+  
