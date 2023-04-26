@@ -13,7 +13,7 @@ import { ItemDetailPage } from './item-detail.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ItemDetailPageRoutingModule
+    ItemDetailPageRoutingModule,
   ],
   declarations: [ItemDetailPage]
 })

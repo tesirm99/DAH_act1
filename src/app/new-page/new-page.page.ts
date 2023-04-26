@@ -9,12 +9,14 @@ import { DataServiceService } from '../services/data-service.service';
 export class NewPagePage implements OnInit {
 
   content: any[] = [];
+  clientsRes: any[] = [];
+  productsRes: any[] = [];
   tab: string|null = "";
   constructor(
     private activatedRoute: ActivatedRoute, 
     private dataService: DataServiceService,
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit() {
     this.tab = this.activatedRoute.snapshot.paramMap.get('tab');
@@ -25,23 +27,20 @@ export class NewPagePage implements OnInit {
 
     switch(this.tab) {
       case 'Clients':
-        console.log('clients');
         this.content = this.dataService.getClients();
         break;
       case 'Products':
-        console.log('products');
         this.content = this.dataService.getProducts();
         break;
       case 'Reservations':
-        console.log('reservations');
         this.content = this.dataService.getReservations();
+        this.clientsRes = this.dataService.getClients();
+        this.productsRes = this.dataService.getProducts();
         break;
       default:
         console.log('default');
         break;
     }
-
-    console.log(this.content);
     
   }
 
@@ -49,4 +48,13 @@ export class NewPagePage implements OnInit {
     this.router.navigate(['item-detail', id]);
   }
 
+  getClientName(id: number) {
+    let client = this.clientsRes.find(client => client.id === id);
+    return client?.nombre;
+  }
+  
+  getProductName(id: number) {
+    let product = this.productsRes.find(product => product.id === id);
+    return product?.nombre;
+  }
 }

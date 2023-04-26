@@ -23,4 +23,8 @@ describe('Tab3Page', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('title should be Products', () => {
+    expect(component.title).toEqual('Products');
+  });
 });

@@ -23,4 +23,8 @@ describe('Tab1Page', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('title should be Clients', () => {
+    expect(component.title).toEqual('Clients');
+  });
 });

@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="/tabs"></ion-back-button>
     </ion-buttons>
     <ion-title>{{tab}}</ion-title>
   </ion-toolbar>
@@ -9,9 +9,9 @@
 
 <ion-content>
 <main>
-  <ion-list [inset]="true" *ngIf="this.tab === 'Clients'">
+  <ion-list [inset]="true">
     <ion-item *ngFor="let item of content">
-      <ion-label>
+      <ion-label *ngIf="this.tab === 'Clients'">
         <h2>{{item['nombre']}} {{item['apellidos']}}</h2>
         <p>
           <ion-icon name="mail"></ion-icon>
@@ -22,12 +22,37 @@
           {{item['telefono']}}
         </p>
       </ion-label>
-      <ion-buttons>
+      <ion-buttons *ngIf="this.tab === 'Clients'">
         <ion-button (click)="goToDetail(item['id'])">
           Edit
         </ion-button>
       </ion-buttons>
+
+      <ion-label *ngIf="this.tab === 'Products'">
+        <h2>{{item['nombre']}}</h2>
+        <p>
+          <ion-icon name="pricetag"></ion-icon>
+          {{item['precio']}}
+        </p>
+        <p>
+          <ion-icon name="cart"></ion-icon>
+          {{item['stock']}}
+        </p>
+      </ion-label>
+
+      <ion-label *ngIf="this.tab === 'Reservations'">
+        <h2>{{this.getClientName(item['id_cliente'])}}</h2>
+        <h3>
+          <ion-icon name="bag-outline"></ion-icon>
+          {{this.getProductName(item['id_producto'])}}
+        </h3>
+        <p>
+          <ion-icon name="calendar"></ion-icon>
+          {{item['fecha_reserva']}}
+        </p>
+      </ion-label>
     </ion-item>
   </ion-list>
+
 </main>
 </ion-content>
